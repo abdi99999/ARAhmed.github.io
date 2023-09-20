@@ -486,7 +486,7 @@ ul li:hover {
     color: white;
 }
 
-/* Style the header */
+/* "To-do list | Header" */
 .header {
     background-color: transparent;
     padding: 6%;
@@ -495,14 +495,7 @@ ul li:hover {
     /* border: 1px solid green; */
 }
 
-/* Clear floats after the header */
-/* .header:after {
-    content: "";
-    display: table;
-    clear: both;
-} */
-
-/* Style the input */
+/* "To-do list | Task Input" */
 #input {
     width: 75%;
     margin: 0;
@@ -513,7 +506,7 @@ ul li:hover {
     font-size: 16px;
 }
 
-/* Style the "Add" button */
+/* "To-do list | Add Task button" */
 .addBtn {
     width: 25%;
     padding: 1.4%;
