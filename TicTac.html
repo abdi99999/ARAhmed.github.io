@@ -6,747 +6,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Tic Tac Toe</title>
     <link rel="stylesheet" href="TicTac.css">
-
+    <script src="TicTac.js" defer></script>
 </head>
 
 <body id="body">
 
     <!-- Tic tac toe game -->
-    <style>
-
-    </style>
 
     <body>
-            <div id="topContainer">
-                <h1 style="color:  rgb(255, 213, 0); font-style: italic;">Enjoy the Super "Tic Tac Toe Game"</h1>
-                <!-- <h2><input type="text" placeholder="Enter Player (X) Name"> &nbsp; &nbsp; VS &nbsp; &nbsp; <input
-                        type="text" placeholder="Enter Player (O) Name"></h2>
-                <h2>"X" &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                    &nbsp; &nbsp; &nbsp; "O"</h2> -->
-                <!-- <h2 id="winner1">Result: Player 1 is winner</h2>
-                <h2 id="winner2">Result: Player 2 is winner</h2>
-                <h2 id="winner3">Result: Match Tie</h2> -->
-            </div>
-
-        <div id="mainC"> 
-            
-          <div id="gameContainerflex">   
-             <div id="gameContainer">
-
-                <div class="b b-t b-l">
-                    <img src="Media files/Black Cross.png" alt="" id="img11" class="img">
-                    <img src="Media files/Black Circle.png" alt="" id="img12" class="img">
-                    <button type="button" onclick="show1()" id="btnId1" class="btnCss"></button>
-                </div>
-                <div class="b b-t">
-                    <img src="Media files/Black Cross.png" alt="" id="img21" class="img">
-                    <img src="Media files/Black Circle.png" alt="" id="img22" class="img">
-                    <button type="button" onclick="show2()" id="btnId2" class="btnCss"></button>
-                </div>
-                <div class="b b-t b-r">
-                    <img src="Media files/Black Cross.png" alt="" id="img31" class="img">
-                    <img src="Media files/Black Circle.png" alt="" id="img32" class="img">
-                    <button type="button" onclick="show3()" id="btnId3" class="btnCss"></button>
-                </div>
-
-                <div class="b b-l">
-                    <img src="Media files/Black Cross.png" alt="" id="img41" class="img">
-                    <img src="Media files/Black Circle.png" alt="" id="img42" class="img">
-                    <button type="button" onclick="show4()" id="btnId4" class="btnCss"></button>
-                </div>
-
-                <div class="b">
-                    <img src="Media files/Black Cross.png" alt="" id="img51" class="img">
-                    <img src="Media files/Black Circle.png" alt="" id="img52" class="img">
-                    <button type="button" onclick="show5()" id="btnId5" class="btnCss"></button>
-                </div>
-
-                <div class="b b-r">
-                    <img src="Media files/Black Cross.png" alt="" id="img61" class="img">
-                    <img src="Media files/Black Circle.png" alt="" id="img62" class="img">
-                    <button type="button" onclick="show6()" id="btnId6" class="btnCss"></button>
-                </div>
-
-                <div class="b b-l b-b">
-                    <img src="Media files/Black Cross.png" alt="" id="img71" class="img">
-                    <img src="Media files/Black Circle.png" alt="" id="img72" class="img">
-                    <button type="button" onclick="show7()" id="btnId7" class="btnCss"></button>
-                </div>
-
-                <div class="b b-b">
-                    <img src="Media files/Black Cross.png" alt="" id="img81" class="img">
-                    <img src="Media files/Black Circle.png" alt="" id="img82"
-                        style="height: 6.1em; width: 6.1em; padding: 1.2em;">
-                    <button type="button" onclick="show8()" id="btnId8" class="btnCss"></button>
-                </div>
-
-                <div class="b b-b b-r">
-                    <img src="Media files/Black Cross.png" alt="" id="img91" class="img">
-                    <img src="Media files/Black Circle.png" alt="" id="img92" class="img">
-                    <button type="button" onclick="show9()" id="btnId9" class="btnCss"></button>
-             </div>
-           </div>
-          </div> 
-            
-        <div id="gameInfoFlex">
-            <div id="gameInfo">
-                <br>
-            <h1 class="h1-Yellow">Instructions</h1>
-            <p class="txt">Player_1 = "X"</p>
-            <p class="txt">Player_2 = "O"</p>
-            <h1 class="h1-Yellow">Game Status</h1>
-            <div style="height: 65px;">
-            <h2 id="winner1">Player 1 winner</h2>
-            <h2 id="winner2">Player 2 winner</h2>
-            <h2 id="winner3">Match Tie</h2>
-            </div>
-            <button style="background-color:  rgb(255, 213, 0); padding: 1em; border: none; justify-content: center;"> <a style="text-decoration: none; font-size: 15px; color: black;"
-                href="http://127.0.0.1:5500/TicTac.html"><i class="h1-Yellow">Play again</i></a></button>
-            </div>
+        <div id="topContainer">
+            <h1 id="toph1">Enjoy the Super "Tic Tac Toe Game "X / O"</h1>
         </div>
 
+        <div id="mainC">
+
+            <div id="gameContainerflex">
+                <div id="gameContainer">
+
+                    <div class="b b-t b-l">
+                        <img src="Media files/Black Cross.png" alt="" id="img11" class="img">
+                        <img src="Media files/Black Circle.png" alt="" id="img12" class="img">
+                        <button type="button" onclick="show1()" id="btnId1" class="btnCss"></button>
+                    </div>
+                    <div class="b b-t">
+                        <img src="Media files/Black Cross.png" alt="" id="img21" class="img">
+                        <img src="Media files/Black Circle.png" alt="" id="img22" class="img">
+                        <button type="button" onclick="show2()" id="btnId2" class="btnCss"></button>
+                    </div>
+                    <div class="b b-t b-r">
+                        <img src="Media files/Black Cross.png" alt="" id="img31" class="img">
+                        <img src="Media files/Black Circle.png" alt="" id="img32" class="img">
+                        <button type="button" onclick="show3()" id="btnId3" class="btnCss"></button>
+                    </div>
+
+                    <div class="b b-l">
+                        <img src="Media files/Black Cross.png" alt="" id="img41" class="img">
+                        <img src="Media files/Black Circle.png" alt="" id="img42" class="img">
+                        <button type="button" onclick="show4()" id="btnId4" class="btnCss"></button>
+                    </div>
+
+                    <div class="b">
+                        <img src="Media files/Black Cross.png" alt="" id="img51" class="img">
+                        <img src="Media files/Black Circle.png" alt="" id="img52" class="img">
+                        <button type="button" onclick="show5()" id="btnId5" class="btnCss"></button>
+                    </div>
+
+                    <div class="b b-r">
+                        <img src="Media files/Black Cross.png" alt="" id="img61" class="img">
+                        <img src="Media files/Black Circle.png" alt="" id="img62" class="img">
+                        <button type="button" onclick="show6()" id="btnId6" class="btnCss"></button>
+                    </div>
+
+                    <div class="b b-l b-b">
+                        <img src="Media files/Black Cross.png" alt="" id="img71" class="img">
+                        <img src="Media files/Black Circle.png" alt="" id="img72" class="img">
+                        <button type="button" onclick="show7()" id="btnId7" class="btnCss"></button>
+                    </div>
+
+                    <div class="b b-b">
+                        <img src="Media files/Black Cross.png" alt="" id="img81" class="img">
+                        <img src="Media files/Black Circle.png" alt="" id="img82"
+                            style="height: 6.1em; width: 6.1em; padding: 1.2em;">
+                        <button type="button" onclick="show8()" id="btnId8" class="btnCss"></button>
+                    </div>
+
+                    <div class="b b-b b-r">
+                        <img src="Media files/Black Cross.png" alt="" id="img91" class="img">
+                        <img src="Media files/Black Circle.png" alt="" id="img92" class="img">
+                        <button type="button" onclick="show9()" id="btnId9" class="btnCss"></button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="gameInfoFlex">
+                <div id="gameInfo">
+                    <br>
+                    <h1 class="h1-Yellow">Instructions</h1>
+                    <p class="txt">Player_1 = "X"</p>
+                    <p class="txt">Player_2 = "O"</p>
+                    <h1 class="h1-Yellow">Game Status</h1>
+                    <div style="height: 65px;">
+                        <h2 id="winner1">Player 1 winner</h2>
+                        <h2 id="winner2">Player 2 winner</h2>
+                        <h2 id="winner3">Match Tie</h2>
+                    </div>
+                    <button
+                        style="background-color:  rgb(255, 213, 0); padding: 1em; border: none; justify-content: center;">
+                        <a style="text-decoration: none; font-size: 15px; color: black;"
+                            href="http://127.0.0.1:5500/TicTac.html"><i class="h1-Yellow">Play again</i></a></button>
+                </div>
+            </div>
         </div>
-
-        <!-- <div style="text-align: center; margin-top: 5em; padding: 0em;">
-            <button style="background-color: orange; padding: 1em;"> <a
-                    style="text-decoration: none; font-size: 15px; color: black;"
-                    href="http://127.0.0.1:5500/TicTac_Game.html"><i>Play again</i></a></button>
-        </div> -->
-
-        <script>
-            var i = 2; //for x or o condition
-            // for player 1 (x)
-            var j = 0; //for coulmn  1 (1,2,3)
-            var k = 0; //for coulmn  2 (4,5,6)
-            var l = 0; //for coulmn  3 (7,8,9)
-            var m = 0; //for row     1 (1,4,7)
-            var n = 0; //for row     2 (2,5,8)
-            var o = 0; //for row     3 (3,6,9)
-            var p = 0; //for diagnol 1 (1,5,9)
-            var q = 0; //for diagnol 2 (3,5,7)
-
-            // for player 2 (o)
-            var r = 0; //for coulmn  1 (1,2,3)
-            var s = 0; //for coulmn  2 (4,5,6)
-            var t = 0; //for coulmn  3 (7,8,9)
-            var u = 0; //for row     1 (1,4,7)
-            var v = 0; //for row     2 (2,5,8)
-            var w = 0; //for row     3 (3,6,9)
-            var x = 0; //for diagnol 1 (1,5,9)
-            var y = 0; //for diagnol 2 (3,5,7)
-            var z = 0; //for tie condition
-
-
-            function show1() {
-                if (i % 2 == 0) {
-                    document.getElementById('img11')
-                        .style.display = "block";
-                    document.getElementById('btnId1')
-                        .style.display = "none";
-                    i++;
-                    j++;
-                    m++;
-                    p++;
-                    z++;
-                    if (j == 3) {
-                        document.getElementById('winner1')
-                            .style.display = "block"
-                        disableBtn();
-                    }
-                    else if (m == 3) {
-                        document.getElementById('winner1')
-                            .style.display = "block"
-                        disableBtn();
-                    }
-                    else if (p == 3) {
-                        document.getElementById('winner1')
-                            .style.display = "block"
-                        disableBtn();
-                    }
-                    else if (z == 9 && j != 3 && k != 3 && l != 3 && m != 3 && n != 3 && o != 3 && p != 3 && q != 3 && r != 3 && s != 3 && t != 3 && u != 3 && v != 3 && w != 3 && x != 3 && y != 3) {
-                        tie();
-                    }
-                    //function tie();
-                }
-                else {
-                    document.getElementById('img12')
-                        .style.display = "block";
-                    document.getElementById('btnId1')
-                        .style.display = "none";
-                    i++;
-                    r++;
-                    u++;
-                    x++;
-                    z++;
-                    //z++;
-                    if (r == 3) {
-                        document.getElementById('winner2')
-                            .style.display = "block"
-                        disableBtn();
-                    }
-                    else if (u == 3) {
-                        document.getElementById('winner2')
-                            .style.display = "block"
-                        disableBtn();
-                    }
-                    else if (x == 3) {
-                        document.getElementById('winner2')
-                            .style.display = "block"
-                        disableBtn();
-                    }
-                    else if (z == 9 && j != 3 && k != 3 && l != 3 && m != 3 && n != 3 && o != 3 && p != 3 && q != 3 && r != 3 && s != 3 && t != 3 && u != 3 && v != 3 && w != 3 && x != 3 && y != 3) {
-                        tie();
-                    }
-                    //function tie();
-                }
-
-
-            }
-
-            function show2() {
-                if (i % 2 == 0) {
-                    document.getElementById('img21')
-                        .style.display = "block";
-                    document.getElementById('btnId2')
-                        .style.display = "none";
-                    i++;
-                    j++;
-                    n++;
-                    z++;
-                    if (j == 3) {
-                        document.getElementById('winner1')
-                            .style.display = "block"
-                        disableBtn();
-                    }
-                    else if (n == 3) {
-                        document.getElementById('winner1')
-                            .style.display = "block"
-                        disableBtn();
-                    }
-                    else if (z == 9 && j != 3 && k != 3 && l != 3 && m != 3 && n != 3 && o != 3 && p != 3 && q != 3 && r != 3 && s != 3 && t != 3 && u != 3 && v != 3 && w != 3 && x != 3 && y != 3) {
-                        tie();
-                    }
-                    //function tie();
-
-                } else {
-                    document.getElementById('img22')
-                        .style.display = "block";
-                    document.getElementById('btnId2')
-                        .style.display = "none";
-                    i++;
-                    r++;
-                    v++;
-                    z++;
-                    //z++;
-                    if (r == 3) {
-                        document.getElementById('winner2')
-                            .style.display = "block"
-                        disableBtn();
-                    }
-                    else if (v == 3) {
-                        document.getElementById('winner2')
-                            .style.display = "block"
-                        disableBtn();
-                    }
-                    else if (z == 9 && j != 3 && k != 3 && l != 3 && m != 3 && n != 3 && o != 3 && p != 3 && q != 3 && r != 3 && s != 3 && t != 3 && u != 3 && v != 3 && w != 3 && x != 3 && y != 3) {
-                        tie();
-                    }
-                    //function tie();
-
-                }
-
-
-            }
-            function show3() {
-                if (i % 2 == 0) {
-                    document.getElementById('img31')
-                        .style.display = "block";
-                    document.getElementById('btnId3')
-                        .style.display = "none";
-                    i++;
-                    j++;
-                    o++;
-                    q++;
-                    z++;
-                    if (j == 3) {
-                        document.getElementById('winner1')
-                            .style.display = "block"
-                        disableBtn();
-                    }
-                    else if (o == 3) {
-                        document.getElementById('winner1')
-                            .style.display = "block"
-                        disableBtn();
-                    }
-                    else if (q == 3) {
-                        document.getElementById('winner1')
-                            .style.display = "block"
-                        disableBtn();
-                    }
-                    else if (z == 9 && j != 3 && k != 3 && l != 3 && m != 3 && n != 3 && o != 3 && p != 3 && q != 3 && r != 3 && s != 3 && t != 3 && u != 3 && v != 3 && w != 3 && x != 3 && y != 3) {
-                        tie();
-                    }
-                    //function tie();
-                } else {
-                    document.getElementById('img32')
-                        .style.display = "block";
-                    document.getElementById('btnId3')
-                        .style.display = "none";
-                    i++;
-                    r++;
-                    w++;
-                    y++;
-                    z++;
-                    if (r == 3) {
-                        document.getElementById('winner2')
-                            .style.display = "block"
-                        disableBtn();
-                    }
-                    else if (w == 3) {
-                        document.getElementById('winner2')
-                            .style.display = "block"
-                        disableBtn();
-                    }
-                    else if (y == 3) {
-                        document.getElementById('winner2')
-                            .style.display = "block"
-                        disableBtn();
-                    }
-                    else if (z == 9 && j != 3 && k != 3 && l != 3 && m != 3 && n != 3 && o != 3 && p != 3 && q != 3 && r != 3 && s != 3 && t != 3 && u != 3 && v != 3 && w != 3 && x != 3 && y != 3) {
-                        tie();
-                    }
-                    //function tie();
-                }
-            }
-            function show4() {
-
-                if (i % 2 == 0) {
-                    document.getElementById('img41')
-                        .style.display = "block";
-                    document.getElementById('btnId4')
-                        .style.display = "none";
-                    i++;
-                    k++;
-                    m++;
-                    z++;
-                    if (k == 3) {
-                        document.getElementById('winner1')
-                            .style.display = "block"
-                        disableBtn();
-                    }
-                    else if (m == 3) {
-                        document.getElementById('winner1')
-                            .style.display = "block"
-                        disableBtn();
-                    }
-                    else if (z == 9 && j != 3 && k != 3 && l != 3 && m != 3 && n != 3 && o != 3 && p != 3 && q != 3 && r != 3 && s != 3 && t != 3 && u != 3 && v != 3 && w != 3 && x != 3 && y != 3) {
-                        tie();
-                    }
-                    //function tie();
-                } else {
-                    document.getElementById('img42')
-                        .style.display = "block";
-                    document.getElementById('btnId4')
-                        .style.display = "none";
-                    i++;
-                    s++;
-                    u++;
-                    z++;
-                    if (s == 3) {
-                        document.getElementById('winner2')
-                            .style.display = "block"
-                        disableBtn();
-                    }
-                    else if (u == 3) {
-                        document.getElementById('winner2')
-                            .style.display = "block"
-                        disableBtn();
-                    }
-                    else if (z == 9 && j != 3 && k != 3 && l != 3 && m != 3 && n != 3 && o != 3 && p != 3 && q != 3 && r != 3 && s != 3 && t != 3 && u != 3 && v != 3 && w != 3 && x != 3 && y != 3) {
-                        tie();
-                    }
-                    //function tie();
-                }
-
-            }
-            function show5() {
-
-                if (i % 2 == 0) {
-                    document.getElementById('img51')
-                        .style.display = "block";
-                    document.getElementById('btnId5')
-                        .style.display = "none";
-                    i++;
-                    k++;
-                    n++;
-                    p++;
-                    q++;
-                    z++;
-                    if (k == 3) {
-                        document.getElementById('winner1')
-                            .style.display = "block"
-                        disableBtn();
-                    }
-                    else if (n == 3) {
-                        document.getElementById('winner1')
-                            .style.display = "block"
-                        disableBtn();
-                    }
-                    else if (p == 3) {
-                        document.getElementById('winner1')
-                            .style.display = "block"
-                        disableBtn();
-                    }
-                    else if (q == 3) {
-                        document.getElementById('winner1')
-                            .style.display = "block"
-                        disableBtn();
-                    }
-                    else if (z == 9 && j != 3 && k != 3 && l != 3 && m != 3 && n != 3 && o != 3 && p != 3 && q != 3 && r != 3 && s != 3 && t != 3 && u != 3 && v != 3 && w != 3 && x != 3 && y != 3) {
-                        tie();
-                    }
-                    //function tie();
-                } else {
-                    document.getElementById('img52')
-                        .style.display = "block";
-                    document.getElementById('btnId5')
-                        .style.display = "none";
-                    i++;
-                    s++;
-                    v++;
-                    x++;
-                    y++;
-                    z++;
-                    if (s == 3) {
-                        document.getElementById('winner2')
-                            .style.display = "block"
-                        disableBtn();
-                    }
-                    else if (v == 3) {
-                        document.getElementById('winner2')
-                            .style.display = "block"
-                        disableBtn();
-                    }
-                    else if (x == 3) {
-                        document.getElementById('winner2')
-                            .style.display = "block"
-                        disableBtn();
-                    }
-                    else if (y == 3) {
-                        document.getElementById('winner2')
-                            .style.display = "block"
-                        disableBtn();
-                    }
-                    else if (z == 9 && j != 3 && k != 3 && l != 3 && m != 3 && n != 3 && o != 3 && p != 3 && q != 3 && r != 3 && s != 3 && t != 3 && u != 3 && v != 3 && w != 3 && x != 3 && y != 3) {
-                        tie();
-                    }
-                    //function tie();
-                }
-
-            }
-            function show6() {
-
-                if (i % 2 == 0) {
-                    document.getElementById('img61')
-                        .style.display = "block";
-                    document.getElementById('btnId6')
-                        .style.display = "none";
-                    i++;
-                    k++;
-                    o++;
-                    z++;
-                    if (k == 3) {
-                        document.getElementById('winner1')
-                            .style.display = "block"
-                        disableBtn();
-                    }
-                    else if (o == 3) {
-                        document.getElementById('winner1')
-                            .style.display = "block"
-                        disableBtn();
-                    }
-                    else if (z == 9 && j != 3 && k != 3 && l != 3 && m != 3 && n != 3 && o != 3 && p != 3 && q != 3 && r != 3 && s != 3 && t != 3 && u != 3 && v != 3 && w != 3 && x != 3 && y != 3) {
-                        tie();
-                    }
-                    //function tie();
-                } else {
-                    document.getElementById('img62')
-                        .style.display = "block";
-                    document.getElementById('btnId6')
-                        .style.display = "none";
-                    i++;
-                    s++;
-                    w++;
-                    z++;
-                    if (s == 3) {
-                        document.getElementById('winner2')
-                            .style.display = "block"
-                        disableBtn();
-                    }
-                    else if (w == 3) {
-                        document.getElementById('winner2')
-                            .style.display = "block"
-                        disableBtn();
-                    }
-                    else if (z == 9 && j != 3 && k != 3 && l != 3 && m != 3 && n != 3 && o != 3 && p != 3 && q != 3 && r != 3 && s != 3 && t != 3 && u != 3 && v != 3 && w != 3 && x != 3 && y != 3) {
-                        tie();
-                    }
-                    //function tie();
-                }
-
-            }
-            function show7() {
-
-                if (i % 2 == 0) {
-                    document.getElementById('img71')
-                        .style.display = "block";
-                    document.getElementById('btnId7')
-                        .style.display = "none";
-                    i++;
-                    l++;
-                    m++;
-                    q++;
-                    z++;
-                    if (l == 3) {
-                        document.getElementById('winner1')
-                            .style.display = "block"
-                        disableBtn();
-                    }
-                    else if (m == 3) {
-                        document.getElementById('winner1')
-                            .style.display = "block"
-                        disableBtn();
-                    }
-                    else if (q == 3) {
-                        document.getElementById('winner1')
-                            .style.display = "block"
-                        disableBtn();
-                    } //function tie();
-                    else if (z == 9 && j != 3 && k != 3 && l != 3 && m != 3 && n != 3 && o != 3 && p != 3 && q != 3 && r != 3 && s != 3 && t != 3 && u != 3 && v != 3 && w != 3 && x != 3 && y != 3) {
-                        tie();
-                    }
-                } else {
-                    document.getElementById('img72')
-                        .style.display = "block";
-                    document.getElementById('btnId7')
-                        .style.display = "none";
-                    i++;
-                    t++;
-                    u++;
-                    y++;
-                    z++;
-                    if (t == 3) {
-                        document.getElementById('winner2')
-                            .style.display = "block"
-                        disableBtn();
-                    }
-                    else if (u == 3) {
-                        document.getElementById('winner2')
-                            .style.display = "block"
-                        disableBtn();
-                    }
-                    else if (y == 3) {
-                        document.getElementById('winner2')
-                            .style.display = "block"
-                        disableBtn();
-                    }
-                    else if (z == 9 && j != 3 && k != 3 && l != 3 && m != 3 && n != 3 && o != 3 && p != 3 && q != 3 && r != 3 && s != 3 && t != 3 && u != 3 && v != 3 && w != 3 && x != 3 && y != 3) {
-                        tie();
-                    }
-
-                }
-
-            }
-            function show8() {
-
-                if (i % 2 == 0) {
-                    document.getElementById('img81')
-                        .style.display = "block";
-                    document.getElementById('btnId8')
-                        .style.display = "none";
-                    i++;
-                    l++;
-                    n++;
-                    z++;
-                    if (l == 3) {
-                        document.getElementById('winner1')
-                            .style.display = "block"
-                        disableBtn();
-                    }
-                    else if (n == 3) {
-                        document.getElementById('winner1')
-                            .style.display = "block"
-                        disableBtn();
-                    }
-                    else if (z == 9 && j != 3 && k != 3 && l != 3 && m != 3 && n != 3 && o != 3 && p != 3 && q != 3 && r != 3 && s != 3 && t != 3 && u != 3 && v != 3 && w != 3 && x != 3 && y != 3) {
-                        tie();
-                    }
-                    //function tie();
-                } else {
-                    document.getElementById('img82')
-                        .style.display = "block";
-                    document.getElementById('btnId8')
-                        .style.display = "none";
-                    i++;
-                    t++;
-                    v++;
-                    z++;
-                    if (t == 3) {
-                        document.getElementById('winner2')
-                            .style.display = "block"
-                        disableBtn();
-                    }
-                    else if (v == 3) {
-                        document.getElementById('winner2')
-                            .style.display = "block"
-                        disableBtn();
-                    }
-                    else if (z == 9 && j != 3 && k != 3 && l != 3 && m != 3 && n != 3 && o != 3 && p != 3 && q != 3 && r != 3 && s != 3 && t != 3 && u != 3 && v != 3 && w != 3 && x != 3 && y != 3) {
-                        tie();
-                    }
-                    //function tie();
-                }
-
-            }
-            function show9() {
-
-                if (i % 2 == 0) {
-                    document.getElementById('img91')
-                        .style.display = "block";
-                    document.getElementById('btnId9')
-                        .style.display = "none";
-                    i++;
-                    l++;
-                    o++;
-                    p++;
-                    z++;
-                    if (l == 3) {
-                        document.getElementById('winner1')
-                            .style.display = "block"
-                        disableBtn();
-                    }
-                    else if (o == 3) {
-                        document.getElementById('winner1')
-                            .style.display = "block"
-                        disableBtn();
-                    }
-                    else if (p == 3) {
-                        document.getElementById('winner1')
-                            .style.display = "block"
-                        disableBtn();
-                    }
-                    else if (z == 9 && j != 3 && k != 3 && l != 3 && m != 3 && n != 3 && o != 3 && p != 3 && q != 3 && r != 3 && s != 3 && t != 3 && u != 3 && v != 3 && w != 3 && x != 3 && y != 3) {
-                        tie();
-                    }
-                    //function tie();
-
-                } else {
-                    document.getElementById('img92')
-                        .style.display = "block";
-                    document.getElementById('btnId9')
-                        .style.display = "none";
-                    i++;
-                    t++;
-                    w++;
-                    x++;
-                    z++;
-                    if (t == 3) {
-                        document.getElementById('winner2')
-                            .style.display = "block"
-                        disableBtn();
-                    }
-                    else if (w == 3) {
-                        document.getElementById('winner2')
-                            .style.display = "block"
-                        disableBtn();
-                    }
-                    else if (x == 3) {
-                        document.getElementById('winner2')
-                            .style.display = "block"
-                        disableBtn();
-
-                    }
-                    else if (z == 9 && j != 3 && k != 3 && l != 3 && m != 3 && n != 3 && o != 3 && p != 3 && q != 3 && r != 3 && s != 3 && t != 3 && u != 3 && v != 3 && w != 3 && x != 3 && y != 3) {
-                        tie();
-                    }
-                    //function tie();
-                }
-            }
-
-            function disableBtn() {
-                document.getElementById("btnId1").disabled = true;
-                document.getElementById("btnId2").disabled = true;
-                document.getElementById("btnId3").disabled = true;
-                document.getElementById("btnId4").disabled = true;
-                document.getElementById("btnId5").disabled = true;
-                document.getElementById("btnId6").disabled = true;
-                document.getElementById("btnId7").disabled = true;
-                document.getElementById("btnId8").disabled = true;
-                document.getElementById("btnId9").disabled = true;
-            }
-
-
-            function tie() {
-                document.getElementById('winner3')
-                    .style.display = "block"
-            }
-
-        </script>
-
-
     </body>
-
-
-
-
-    <!-- <div id="carouselExampleCaptions" class="carousel slide">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="https://source.unsplash.com/random/400×400/?tech" class="d-block w-100" alt="">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>First slide label</h5>
-                    <p>Some representative placeholder content for the first slide.</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="https://source.unsplash.com/random/1400×400/?tech" alt="">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Second slide label</h5>
-                    <p>Some representative placeholder content for the second slide.</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="..." class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Third slide label</h5>
-                    <p>Some representative placeholder content for the third slide.</p>
-                </div>
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-        crossorigin="anonymous"></script>
-</body> -->
-
 </html>
