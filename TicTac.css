@@ -7,28 +7,32 @@
     justify-content: center;
     text-align: center;
     margin: auto;
-    margin-top: 4%;
+    margin-top: 3%;
     margin-bottom: 5%;
-    padding: 0em;
-    height: 5em;
-    width: 40em;
+    padding: 1%;
+    width: 50%;
     border-radius: 10px;
     color: white;
     background: #131516;
     animation: color-animation 10s infinite alternate;
 }
 
+#toph1 {
+    color: rgb(255, 213, 0);
+    font-style: italic;
+}
+
 #mainC {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
-    width: 65%;
+    width: 62%;
     margin: auto;
 }
 
+
 #gameInfoFlex {
     display: flex;
-    justify-content: end;
 
 }
 
@@ -38,11 +42,13 @@
     padding: 0em;
     height: 26em;
     width: 20em;
-    border-radius: 10px;
+    border-radius: 3%;
     color: white;
     background: #131516;
     animation: color-animation 10s infinite alternate;
+
 }
+
 
 .h1-Yellow {
     color: black;
@@ -52,7 +58,7 @@
 }
 
 .txt {
-    font-size: 25px;
+    font-size: 155%;
 }
 
 #gameContainerflex {
@@ -61,49 +67,49 @@
 }
 
 #gameContainer {
-    position: absolute;
     display: grid;
-    grid-template-rows: 8em 8.2em 8em;
-    grid-template-columns: 8em 8.1em 8em;
+    grid-template-rows: 30.77% 31.54% 30.77%;
+    grid-template-columns: 30.77% 31.15% 30.77%;
     justify-content: center;
     align-content: center;
     padding: 0em;
     height: 26em;
     width: 26em;
-    border-radius: 10px;
+    border-radius: 3%;
     background: #131516;
     animation: color-animation 10s infinite alternate;
 }
 
 @keyframes color-animation {
     0% {
-        filter: drop-shadow(0px 0px 20px #FFFF00);
+        filter: drop-shadow(0px 0px 10px #FFFF00);
     }
 
     16.6% {
-        filter: drop-shadow(0px 0px 30px #FF0000);
+        filter: drop-shadow(0px 0px 20px #FF0000);
     }
 
     33.2% {
-        filter: drop-shadow(0px 0px 20px white);
+        filter: drop-shadow(0px 0px 10px white);
     }
 
     49.8% {
-        filter: drop-shadow(0px 0px 20px #FFFF00);
+        filter: drop-shadow(0px 0px 10px #FFFF00);
     }
 
     66.4% {
-        filter: drop-shadow(0px 0px 30px #FF0000);
+        filter: drop-shadow(0px 0px 20px #FF0000);
     }
 
     83% {
-        filter: drop-shadow(0px 0px 20px white);
+        filter: drop-shadow(0px 0px 10px white);
     }
 
     100% {
-        filter: drop-shadow(0px 0px 20px #FFFF00);
+        filter: drop-shadow(0px 0px 10px #FFFF00);
     }
 }
+
 
 #img11 {
     display: none;
@@ -223,4 +229,29 @@
     width: 9.3em;
     border: none;
     background: transparent;
+}
+
+@media (max-width: 1230px) {
+
+    #mainC {
+        flex-direction: column;
+        /* height: 150vh;
+        border: 2px solid white; */
+    }
+
+    #gameContainerflex {
+        justify-content: center;
+
+    }
+
+    #gameInfoFlex {
+        justify-content: center;
+
+    }
+
+    #gameInfo {
+        width: 26em;
+        margin-top: 10%;
+
+    }
 }
