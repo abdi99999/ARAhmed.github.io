@@ -23,7 +23,7 @@
             <div id="gameContainerflex">
                 <div id="gameContainer">
 
-                    <div class="b b-t b-l">
+                    <div class="b b-t b-l ">
                         <img src="Media files/Black Cross.png" alt="" id="img11" class="img">
                         <img src="Media files/Black Circle.png" alt="" id="img12" class="img">
                         <button type="button" onclick="show1()" id="btnId1" class="btnCss"></button>
@@ -65,8 +65,7 @@
 
                     <div class="b b-b">
                         <img src="Media files/Black Cross.png" alt="" id="img81" class="img">
-                        <img src="Media files/Black Circle.png" alt="" id="img82"
-                            style="height: 6.1em; width: 6.1em; padding: 1.2em;">
+                        <img src="Media files/Black Circle.png" alt="" id="img82" class="img">
                         <button type="button" onclick="show8()" id="btnId8" class="btnCss"></button>
                     </div>
 
@@ -82,20 +81,24 @@
                 <div id="gameInfo">
                     <br>
                     <h1 class="h1-Yellow">Instructions</h1>
-                    <p class="txt">Player_1 = "X"</p>
-                    <p class="txt">Player_2 = "O"</p>
+                    <div id="playertxt">
+                        <p class="txt">Player_1 = "X"</p>
+                        <p class="txt">Player_2 = "O"</p>
+                    </div>
                     <h1 class="h1-Yellow">Game Status</h1>
-                    <div style="height: 65px;">
+                    <div id="result">
                         <h2 id="winner1">Player 1 winner</h2>
                         <h2 id="winner2">Player 2 winner</h2>
                         <h2 id="winner3">Match Tie</h2>
                     </div>
-                    <button
-                        style="background-color:  rgb(255, 213, 0); padding: 1em; border: none; justify-content: center;">
-                        <a style="text-decoration: none; font-size: 15px; color: black;"
-                            href="http://127.0.0.1:5500/TicTac.html"><i class="h1-Yellow">Play again</i></a></button>
+                    <a href="http://127.0.0.1:5500/TicTac.html">
+                        <button id="playBtn" style=" border: none; justify-content: center;"><i>Play
+                                again</i></button></a>
                 </div>
             </div>
+
         </div>
+
     </body>
+
 </html>
