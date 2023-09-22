@@ -412,10 +412,6 @@
         font-size: small;
     }
 
-    #mainC {
-        border: 1px solid RED;
-    }
-
     #gameContainer {
         height: 13em;
         width: 13em;
