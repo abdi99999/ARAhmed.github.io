@@ -360,7 +360,7 @@
 
     #gameInfo {
         width: 16em;
-        margin-top: 10%;
+        margin-top: 12%;
 
     }
 
@@ -396,7 +396,7 @@
 @media (max-width: 400px) {
 
     #topContainer {
-        margin-bottom: 4%;
+        margin-bottom: 6%;
         width: 70%;
     }
 
