@@ -58,7 +58,7 @@
 }
 
 .txt {
-    font-size: 155%;
+    font-size: 1.6em;
 }
 
 #gameContainerflex {
@@ -184,14 +184,18 @@
 }
 
 .img {
-    height: 6em;
-    width: 6em;
-    padding: 1em;
+    /* height: 6em;
+    width: 6em; */
+    height: 77%;
+    width: 77%;
+    padding: 12%;
+
 }
 
 #winner1 {
     display: none;
     text-align: center;
+
 }
 
 #winner2 {
@@ -225,33 +229,213 @@
 }
 
 .btnCss {
-    height: 9.3em;
-    width: 9.3em;
+    height: 100%;
+    width: 100%;
     border: none;
     background: transparent;
 }
 
-@media (max-width: 1230px) {
+#result {
+    height: 4.4em;
+}
+
+#playBtn {
+    color: black;
+    background-color: rgb(255, 213, 0);
+    padding: 3%;
+    font-weight: bold;
+    font-size: 1.3vw;
+    border: none;
+    border-radius: 2%;
+
+}
+
+@media (max-width: 1250px) {
+
+    #topContainer {
+        width: 45%;
+    }
+
+    #toph1 {
+        font-size: 1.7em;
+    }
+
+    #mainC {
+        width: 55%;
+    }
+
+    #gameContainer {
+        height: 22em;
+        width: 22em;
+    }
+
+    #gameInfo {
+        height: 22em;
+        width: 16em;
+    }
+
+    .h1-Yellow {
+        font-size: 1.7em;
+    }
+
+    .txt {
+        font-size: 1.3em;
+    }
+
+    #result {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 1200px) {
+
+    #topContainer {
+        margin-bottom: 4%;
+        width: 45%;
+    }
+
+    #toph1 {
+        font-size: x-large;
+    }
 
     #mainC {
         flex-direction: column;
-        /* height: 150vh;
-        border: 2px solid white; */
     }
 
     #gameContainerflex {
         justify-content: center;
+    }
 
+    #gameContainer {
+        height: 20em;
+        width: 20em;
     }
 
     #gameInfoFlex {
         justify-content: center;
-
     }
 
     #gameInfo {
-        width: 26em;
+        width: 20em;
+        height: 14.3em;
+        margin-top: 6%;
+    }
+
+    .h1-Yellow {
+        font-size: large;
+        margin: 0%;
+    }
+
+    #playertxt {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .txt {
+        font-size: medium;
+    }
+
+    #playertxt {
+        font-size: medium;
+    }
+
+    #result {
+        font-size: 0.7em;
+    }
+
+    #playBtn {
+        font-size: x-small;
+    }
+}
+
+@media (max-width: 650px) {
+
+    #topContainer {
+        margin-bottom: 4%;
+        width: 70%;
+    }
+
+    #mainC {
+        border: 1px solid RED;
+        width: 80%;
+    }
+
+    #gameContainer {
+        height: 16em;
+        width: 16em;
+    }
+
+    #gameInfo {
+        width: 16em;
         margin-top: 10%;
 
+    }
+
+    #topContainer {
+        width: 50%;
+    }
+
+    #toph1 {
+        font-size: large;
+    }
+
+    .b {
+        border: 2px solid rgb(255, 255, 255);
+    }
+
+    .b-t {
+        border-top: 0;
+    }
+
+    .b-l {
+        border-left: 0;
+    }
+
+    .b-r {
+        border-right: 0;
+    }
+
+    .b-b {
+        border-bottom: 0;
+    }
+}
+
+@media (max-width: 400px) {
+
+    #topContainer {
+        margin-bottom: 4%;
+        width: 70%;
+    }
+
+    #toph1 {
+        font-size: small;
+    }
+
+    #mainC {
+        border: 1px solid RED;
+    }
+
+    #gameContainer {
+        height: 13em;
+        width: 13em;
+    }
+
+    #gameInfo {
+        width: 13em;
+    }
+
+    #playertxt {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .txt {
+        font-size: small;
+        margin: 4%;
+    }
+
+    #result {
+        font-size: 0.5em;
     }
 }
